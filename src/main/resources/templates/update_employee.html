@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Employee</title>
+
+<!-- Materialize CSS -->
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<style>
+    body {
+        background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        min-height: 100vh;
+        padding: 20px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .container-box {
+        background: #fff;
+        max-width: 700px;
+        margin: auto;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    h3 {
+        text-align: center;
+        color: #0d47a1;
+        font-weight: 600;
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+    }
+
+    .btn-submit {
+        background: #0288d1 !important;
+        padding: 12px 20px;
+        width: 100%;
+        border-radius: 8px;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+
+    .back-link {
+        display: block;
+        text-align: center;
+        margin-top: 18px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #0d47a1;
+    }
+
+    .input-field label {
+        color: #1565c0;
+        font-weight: 500;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        .container-box {
+            padding: 18px;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        .input-field label {
+            font-size: 14px;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container-box">
+
+    <h3>Update Employee</h3>
+
+    <form th:action="@{/saveEmployee}" th:object="${employee}" method="post">
+
+        <input type="hidden" th:field="*{id}">
+
+        <div class="row">
+
+            <div class="input-field col s12 m6">
+                <input id="first_name" type="text" th:field="*{firstName}" required>
+                <label for="first_name">First Name</label>
+            </div>
+
+            <div class="input-field col s12 m6">
+                <input id="last_name" type="text" th:field="*{lastName}" required>
+                <label for="last_name">Last Name</label>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="email" type="email" th:field="*{email}" required>
+                <label for="email">Email</label>
+            </div>
+        </div>
+
+        <button type="submit" class="waves-effect waves-light btn btn-submit">
+            ✔ Update Employee
+        </button>
+
+    </form>
+
+    <a th:href="@{/}" class="back-link">← Back to Employee List</a>
+
+</div>
+
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+</html>
