@@ -1,4 +1,4 @@
-"""# Employee Management System (EMS)
+# Employee Management System (EMS)
 ### A Production-Ready Spring Boot CRUD Application
 
 The Employee Management System (EMS) is a full-stack web application built using Spring Boot, Spring MVC, Spring Data JPA, Thymeleaf, and MySQL to manage employee records efficiently. This project demonstrates clean architecture, layered design, reusability of components, and real-world development practices gained from 10+ years of backend development experience.
@@ -33,4 +33,4 @@ Server: Embedded Tomcat
 
 ## License
 MIT License
-"""
+
