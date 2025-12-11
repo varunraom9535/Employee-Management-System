@@ -54,6 +54,7 @@ Thymeleaf-based templates for dynamic frontend rendering.
 
 ## 📁 Project Structure
 
+```text
 EmployeeManagementSystem/
 ├── src/
 │   ├── main/
@@ -78,7 +79,7 @@ EmployeeManagementSystem/
 ├── pom.xml                                   # Maven Dependencies
 └── README.md                                 # Documentation
 
-
+```
 ---
 
 ## 🛠 Tech Stack
