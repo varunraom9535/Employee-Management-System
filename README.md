@@ -101,7 +101,7 @@ EmployeeManagementSystem/
 ```bash
 git clone https://github.com/your-username/Employee-Management-System.git
 cd Employee-Management-System
-
+```
 ### **2️⃣ Configure MySQL
 
 Update your `application.properties`:
@@ -110,19 +110,17 @@ Update your `application.properties`:
 spring.datasource.url=jdbc:mysql://localhost:3306/emsdb
 spring.datasource.username=root
 spring.datasource.password=your_password
-
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+```
 
 3️⃣ Run the Application
+```bash
 mvn spring-boot:run
+```
 
-4️⃣ Open in Browser
-
-http://localhost:8080/
-
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 ✔ Role-Based Authentication (ADMIN/USER)
 ✔ Pagination & Sorting
@@ -130,11 +128,10 @@ http://localhost:8080/
 ✔ Export Employees as PDF/Excel
 ✔ Docker Deployment
 ✔ Convert to Microservices (Spring Cloud)
+---
 
-👨‍💻 Author
+## 👨‍💻 Author
+**Varun Rao M**
+- GitHub: [@varunraom9535](https://github.com/varunraom9535)
+- LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-linkedin)
 
-Varun Rao M
-Java Developer | Spring Boot | Backend Engineering
-
-GitHub: @varunraom9535
-LinkedIn: Add your profile link here
