@@ -122,12 +122,13 @@ mvn spring-boot:run
 
 ## 🔮 Future Enhancements
 
-✔ Role-Based Authentication (ADMIN/USER)
-✔ Pagination & Sorting
-✔ REST API Version (JSON output)
-✔ Export Employees as PDF/Excel
-✔ Docker Deployment
-✔ Convert to Microservices (Spring Cloud)
+- ✔ Role-Based Authentication (ADMIN/USER)
+- ✔ Pagination & Sorting
+- ✔ REST API Version (JSON output)
+- ✔ Export Employees as PDF/Excel
+- ✔ Docker Deployment
+- ✔ Convert to Microservices (Spring Cloud)
+
 ---
 
 ## 👨‍💻 Author
